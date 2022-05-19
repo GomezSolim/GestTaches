@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>listes</title>
+</head>
+<body>
+    <header><h1>Gestionnaire de tache</h1></header>  
+    <form >
+        <input type="text" class="todo-input" placeholder="Titre...">
+        <button class="todo-button" type="submit"><!--<i class="fa-solid fa-square-plus"></i>-->Ajouter</button>
+            <!--ajout des filtres-->  
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">Toutes</option>
+                <option value="completed">Complété</option>
+                <option value="uncompleted">A Faire</option>
+            </select>
+        </div>  
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list">
+            <!--<div class="todo">
+                <li>html</li>
+                <button>Delete</button>
+                <button>check</button>
+            </div>-->
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
